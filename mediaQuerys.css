@@ -1,0 +1,32 @@
+@media (min-width: 576px) {
+
+}
+@media (min-width: 772px) {
+    body{
+        background-color: #1f1d2b;
+    }
+    .button-nav{
+        display: none;
+    }
+    nav .list{
+        display: flex;
+        z-index: 10;
+        list-style: none;
+        margin-right: 2rem;
+    }
+    .list-element a{
+        text-decoration: none;
+        padding-right:30px;
+        color: #fff;
+    }
+    .list-element a:hover{
+        transition: 0.4s;
+        color: #f1a600;
+    }
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1200px) {
+
+}
