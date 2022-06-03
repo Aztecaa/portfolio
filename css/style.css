@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    padding: 0;
     font-family: 'Inter', sans-serif;
 }
 body{
@@ -33,23 +34,7 @@ h4, h5{
     right: 0;
     top: 0;
 }
-.home{
-    height: 40vh;
 
-    position: relative;
-    z-index: 10;
-}
-.content-home{
-    display: flex;
-    flex-direction: column;
-}
-.my-photo{
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    width: 170px;
-    z-index: 2;
-}
 
 .button-nav{
     position: absolute;
@@ -62,6 +47,36 @@ h4, h5{
 }
 .list{
     display: none;
+}
+
+
+.home{
+    height: 40vh;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 10;
+}
+.content-home{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.home-element .home-h1{
+    position: absolute;
+    z-index: 99;
+}
+.home-h1{
+    margin: 0 30px 0;
+}
+.home-p{
+    margin: 5px 30px 5px;
+}
+.my-photo{
+    position: absolute;
+    bottom: 5px;
+    right: 50px;
+    width: 170px;
+    z-index: 2;
 }
 
 
@@ -81,17 +96,26 @@ h4, h5{
     font-size: 18px;
     padding: 0 10vw 0 10vw;
 }
+
+
 .logos{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
     padding: 30px 0 30px 0;
 }
 .logos .card1{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
+
 .logos .card2{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.card1 .card1-text, .card2-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -109,9 +133,14 @@ h4, h5{
     flex-direction: row;
     align-items: center;
 }
-.exp-item{
-    margin: auto;
-    padding: 10px 0 10px;
+.exp-item-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.exp-item-img{
+    display: flex;
+    justify-content: flex-end;
 }
 
 
