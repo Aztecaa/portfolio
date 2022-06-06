@@ -14,13 +14,10 @@
 </head>
 <body>
     <nav>
-        <div class="header-nav">
-            <img class="rectangle1" src="./img/mob-rec1.svg" alt="">
-        </div>
-        <button class="button-nav">
+        <button onclick="toggleMenu" class="button-nav">
             <img src="./img/bars-menu.svg" alt="">
         </button>
-        <ul class="list">
+        <ul id='ul-nav' class="hidde">
             <li class="list-element"><a href="#">Home</a></li>
             <li class="list-element"><a href="#">Acerca de mí</a></li>
             <li class="list-element"><a href="#">Experiencia</a></li>
@@ -63,7 +60,7 @@
         <div class="logos row">
             <div class="col-6">
                 <div class="card1">
-                    <div class="card1-parts">
+                    <div class="card-parts">
                         <div>
                             <img src="./img/uvm-logo.jpg" alt="">
                         </div>
@@ -76,7 +73,7 @@
             </div>
             <div class="col-6">
                 <div class="card2">
-                    <div class="card2-parts">
+                    <div class="card-parts">
                         <div>
                             <img src="./img/academ-logo.png" alt="">
                         </div>
@@ -94,8 +91,49 @@
 
     <section class="experiencia">
         <h2>Experiencia</h2>
-            <div class="exp-content row">
-                    <div class="exp-item-img col-4">
+            <div class="exp-content">
+                <div class="item1">
+                    <img src="./img/amazon-logo.svg" alt="">
+                <div class="item2">
+                    <h3>Amazon</h3>
+                    <h4>UI Designer</h4>
+                    <h5>2015-2017</h5></div>
+                </div>
+                <div class="item3">
+                    <h3>2 años</h3>
+                </div>
+
+
+                <div class="item4">
+                    <img src="./img/list-bar.svg" alt="">
+                </div>
+
+
+                <div class="item5">
+                    <img src="./img/airbnb-logo.svg" alt="">
+                </div>
+                <div class="item6">
+                    <h3>Airbnb</h3>
+                    <h4>Senior UX/UI</h4>
+                    <h5>2017-2018</h5>
+                </div>
+                <div class="item7">
+                    <h3>1 años</h3>
+                </div>
+                <div class="item8">
+                    <img src="./img/google-logo.svg" alt="">
+                </div>
+                <div class="item9">
+                    <h3>Google</h3>
+                    <h4>Product designer</h4>
+                    <h5>2018-actualidad</h5>
+                </div>
+                <div class="item10">
+                    <h3>2 años</h3>
+                </div>
+
+
+            <!--         <div class="exp-item-img col-4">
                     <img src="./img/amazon-logo.svg" alt="">
                     </div>
                     <div class="exp-item-text col-4">
@@ -109,7 +147,7 @@
                         <h3>2 años</h3>
                     </div>
             </div>
-
+            
             <div class="exp-content row">
                     <div class="exp-item-img col-4">
                     <img src="./img/airbnb-logo.svg" alt="">
@@ -123,7 +161,7 @@
                     </div>
                     <div class="col-4">
                         <h3>1 años</h3>
-                    </div>
+                    </div> 
             </div>
 
             <div class="exp-content row">
@@ -140,7 +178,7 @@
                 <div class="col-4">
                     <h3>2 años</h3>
                 </div>
-            </div>
+            </div>-->
     </section>
 
 
@@ -153,15 +191,6 @@
                 </div>
                 <div class="hab-text col-7">
                     <h3>Mobile app desing</h3>
-                </div>
-            </div>
-
-            <div class="row hab-item">
-                <div class="num col-3">
-                    <h6>95%</h6>
-                </div>
-                <div class="hab-text col-7">
-                    <h3>Web desing</h3>
                 </div>
             </div>
 
@@ -246,5 +275,6 @@
     <footer>
         <h4>Hecho con ♥ Ignacio Escudero</h4>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>

@@ -1,26 +1,20 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
 body{
     background-color: #1f1d2b;
 }
-nav{
-    width: 100%;
-    height: 15vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
 h1{
-    font-size: 50px;
+    font-size: 150px;
 }
 h2{
-    font-size: 32px;
+    font-size: 50px;
 }
 h4, h5{
-    font-size: 12px;
+    font-size: 18px;
     color: #a1a1a1;
 }
 .font-color-w{
@@ -29,14 +23,33 @@ h4, h5{
 .font-color-o{
     color: #f1a600;
 }
-.rectangle1{
-    position: absolute;
-    right: 0;
-    top: 0;
+.hidden{
+    display: none;
 }
-
-
+nav{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    height: 100px;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+nav a{
+    color: #fff;
+    font-weight: 600;
+    padding-right: 60px;
+    text-decoration: none;
+}
+nav a:hover{
+    transition: 0.4s;
+    color: #f1a600;
+}
 .button-nav{
+    display: none;
     position: absolute;
     margin-right: 30px;
     border: none;
@@ -45,37 +58,41 @@ h4, h5{
 .button-nav img{
     width: 2rem;
 }
-.list{
-    display: none;
-}
 
 
 .home{
-    height: 40vh;
-    margin-bottom: 20px;
+    height: 700px;
     position: relative;
-    z-index: 10;
 }
 .content-home{
     position: relative;
     display: flex;
     flex-direction: column;
-}
-.home-element .home-h1{
-    position: absolute;
     z-index: 99;
+    margin-left: 140px;
 }
-.home-h1{
-    margin: 0 30px 0;
+.e-1{
+    padding-bottom: 20px;
 }
-.home-p{
-    margin: 5px 30px 5px;
+.e-2{
+    width: 700px;
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+.e-3{
+    width: 500px;
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+.home-icons img{
+      width: 100px;
+      padding-right: 30px;
 }
 .my-photo{
+    width: 500px;
     position: absolute;
-    bottom: 5px;
-    right: 50px;
-    width: 170px;
+    bottom: 25px;
+    right: 100px;
     z-index: 2;
 }
 
@@ -99,7 +116,7 @@ h4, h5{
 
 
 .logos{
-    padding: 30px 0 30px 0;
+    padding: 30px;
 }
 .logos .card1{
     display: flex;
@@ -120,30 +137,20 @@ h4, h5{
 
 
 
-.experiencia{
-    color: #fff;
-    width: 100%;
-}
-.experiencia>h2{
+
+.experiencia h2{
     text-align: center;
-    padding: 20px;
+    color: #fff;
+    padding: 30px;
 }
 .exp-content{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
 }
-.exp-item-text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.item4{
+    grid-row: 1/4;
 }
-.exp-item-img{
-    display: flex;
-    justify-content: flex-end;
-}
-
-
 
 .mis-hab>h2{
     text-align: center;
@@ -155,6 +162,8 @@ h4, h5{
     align-items: center;
 }
 .num h6{
+    display: flex;
+    justify-content: end;
     color: #f1a600;
     font-size: 32px;
     padding: 0 15px;
@@ -167,20 +176,23 @@ h4, h5{
 
 .portafolio h2{
     color: #fff;
-    margin: 20px 0px;
+    margin: 50px 0px;
     text-align: center;
 }
 .port-content{
     color: #fff;
-    padding: 25px;
+    padding: 20px 100px;
 }
 .port-content img{
-    width: 200px;
     padding-bottom: 10px;
+    box-shadow: -5px -15px 0px #f1a600, 5px -15px 0px #f1a600;
 }
 .port-dif{
     display: flex;
     flex-direction: row-reverse;
+}
+.port-dif img{
+    box-shadow: -5px -15px 0px #51535f, 5px -15px 0px #51535f;
 }
 
 
