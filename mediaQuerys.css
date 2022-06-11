@@ -4,34 +4,36 @@
     .button-nav{
         display: none;
     }
+    .mobile-nav{
+        display: none;
+     }
+    }
     .nav-desk{
+        display: inline-block;
+        margin: auto 0;
+    }
+    .nav-desk ul{
         display: flex;
         justify-content: end;
         list-style: none;
     }
-    .ul-nav-desk a{
+    .nav-desk-list a{
         text-decoration: none;
         color: #fff;
         padding-right: 2rem;
     }
+    .nav-desk-list a:hover{
+        color: #f1a600;
+    }
+
+
+
+
     .home{
-        height: 350px;
+        height: 400px;
     }.my-photo{
         width: 15rem;
     }
-
-    .container{
-        display: block;
-    }
-    .site-nav{
-        position: static;
-     }
-    .nav-list{
-         border: none;
-           text-align:unset;
-         list-style: none;
-    }
-}
     
 @media (max-width: 992px) {
     /* h1{

@@ -13,11 +13,13 @@
     <link rel="stylesheet" href="mediaQuerys.css">
 </head>
 <body>
-    <nav class="container">
-        <button class="button-nav" onclick="toggleMenu()">
-            <img src="./img/bars-menu.svg" alt="">
-        </button>
-        <div id="site-nav" class="mobile-nav">
+    <header class="home" id="home">
+        <img class="my-photo" src="./img/my-photo.webp" alt="">
+        <nav class="nav-bar">
+            <button class="button-nav" onclick="toggleMenu()">
+                <img src="./img/bars-menu.svg" alt="">
+            </button>
+        <div class="mobile-nav" id="nav-menu">
             <ul class="nav-list">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#aboutmy">Acerca de mí</a></li>
@@ -28,7 +30,7 @@
             </ul>
         </div>
         <div class="nav-desk">
-            <ul class="ul-nav-desk">
+            <ul class="nav-desk-list">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#aboutmy">Acerca de mí</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
@@ -36,10 +38,8 @@
                 <li><a href="#portafolio">Mi portafolio</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
-        </div>
-    </nav>
-    <header class="home" id="home">
-        <img class="my-photo" src="./img/my-photo.webp" alt="">
+        </div> 
+        </nav>
         <div class="content-home">
             <div class=" element e-1">
                 <h1 class="font-color-w home-h1">Ignacio E.</h1>
