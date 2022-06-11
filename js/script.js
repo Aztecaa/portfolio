@@ -1,4 +1,4 @@
 function toggleMenu(){
-    const nav= document.getElementById('ul-nav');
-    nav.classList.toggle('hidden')
+    const siteNav = document.getElementById('site-nav');
+    siteNav.classList.toggle('hidden');
 }

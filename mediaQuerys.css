@@ -1,16 +1,40 @@
-@media (max-width: 576px) {
+@media (min-width: 576px) {
+}
+@media (min-width: 790px) {
     .button-nav{
         display: none;
     }
-}
-@media (min-width: 790px) {
-    .port-content img{
-        width: 400px;
+    .nav-desk{
+        display: flex;
+        justify-content: end;
+        list-style: none;
+    }
+    .ul-nav-desk a{
+        text-decoration: none;
+        color: #fff;
+        padding-right: 2rem;
+    }
+    .home{
+        height: 350px;
+    }.my-photo{
+        width: 15rem;
+    }
+
+    .container{
+        display: block;
+    }
+    .site-nav{
+        position: static;
+     }
+    .nav-list{
+         border: none;
+           text-align:unset;
+         list-style: none;
     }
 }
-
+    
 @media (max-width: 992px) {
-    h1{
+    /* h1{
         font-size: 120px
     }
     h2{
@@ -46,5 +70,5 @@
     }
     .port-dif img{
         box-shadow: -5px -15px 0px #51535f, 5px -15px 0px #51535f;
-    }
+    } */
 }

@@ -7,60 +7,68 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <title>Portafolio Ignacio E.</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="mediaQuerys.css">
-    <title>Portafolio Ignacio E.</title>
 </head>
 <body>
-    <nav>
-        <button onclick="toggleMenu" class="button-nav">
+    <nav class="container">
+        <button class="button-nav" onclick="toggleMenu()">
             <img src="./img/bars-menu.svg" alt="">
         </button>
-        <ul id='ul-nav' class="hidde">
-            <li class="list-element"><a href="#">Home</a></li>
-            <li class="list-element"><a href="#">Acerca de mí</a></li>
-            <li class="list-element"><a href="#">Experiencia</a></li>
-            <li class="list-element"><a href="#">Mis habilidades</a></li>
-            <li class="list-element"><a href="#">Mi portafolio</a></li>
-            <li class="list-element"><a href="#">Contacto</a></li>
-        </ul>
+        <div id="site-nav" class="mobile-nav">
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutmy">Acerca de mí</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#habilidades">Mis habilidades</a><li>
+                <li><a href="#portafolio">Mi portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="nav-desk">
+            <ul class="ul-nav-desk">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutmy">Acerca de mí</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#habilidades">Mis habilidades</a><li>
+                <li><a href="#portafolio">Mi portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
     </nav>
-    <header>
-        <div class="home">
-            <div class="content-home row">
-                <div class="element e-1">
-                    <h1 class="font-color-w home-h1">Ignacio E.</h1>
-                </div>
-                <div class="element e-2">
-                    <p class="font-color-w home-p" >Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="element e-3">
-                    <h3 class="font-color-w"><span class="font-color-o">+5 años </span>de experiencia</h3>
-                </div>
-                <div class="home-icons">
-                    <img src="./img/linkedin_icon.svg" alt="" class="header-logo">
-                    <img src="./img/instagram_icon.svg" alt="" class="header-logo">
-                    <img src="./img/twitter_icon.svg" alt="" class="header-logo">
-                </div>
+    <header class="home" id="home">
+        <img class="my-photo" src="./img/my-photo.webp" alt="">
+        <div class="content-home">
+            <div class=" element e-1">
+                <h1 class="font-color-w home-h1">Ignacio E.</h1>
             </div>
-            <img class="my-photo" src="./img/my-photo.webp" alt="">
+            <div class=" element e-2">
+                <p class="font-color-w home-p" >Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class=" element e-3">
+                <h3 class="font-color-w"><span class="font-color-o">+5 años </span>de experiencia</h3>
+            </div>
+            <div class="home-icons">
+                <img src="./img/linkedin_icon.svg" alt="" class="header-logo">
+                <img src="./img/instagram_icon.svg" alt="" class="header-logo">
+                <img src="./img/twitter_icon.svg" alt="" class="header-logo">
+            </div>
         </div>
     </header>
 
 
-
-    <section class="about-my">
+    <section class="about-my" id="aboutmy">
         <div class="text-about-my row">
-            <div class="col-12">
+            <div class="text-content">
                 <h2>Acerca de mí</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur vero nemo rem repellat ex libero debitis reiciendis ipsa officiis eum, ducimus pariatur minima corrupti in saepe autem facere voluptatum. Atque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur vero nemo rem repellat ex libero debitis reiciendis ipsa officiis eum, ducimus pariatur minima corrupti in saepe autem facere voluptatum. Atque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, excepturi quia tempora aperiam officia incidunt, architecto ducimus rerum explicabo tenetur ipsum nisi dolore. Aliquid unde sint, laudantium fugiat quod amet?</p>
             </div>
         </div>
         <div class="logos row">
-            <div class="col-6">
-                <div class="card1">
-                    <div class="card-parts">
+                <div class="card1 col-6">
+                    <div class="card-content">
                         <div>
                             <img src="./img/uvm-logo.jpg" alt="">
                         </div>
@@ -70,10 +78,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-6">
-                <div class="card2">
-                    <div class="card-parts">
+                <div class="card2 col-6">
+                    <div class="card-content">
                         <div>
                             <img src="./img/academ-logo.png" alt="">
                         </div>
@@ -83,172 +89,89 @@
                         </div>
                     </div>
                 </div>
+        </div>
+    </section>
+
+    <section class="experiencia" id="experiencia">
+        <h2>Experiencia</h2>
+        <div class="experiencia-content">
+            <div class="item-exp i-img">
+                <img src="./img/amazon-logo.svg" alt="">
+            </div>
+    
+            <div class="item-exp i-img">
+                <img src="./img/airbnb-logo.svg" alt="">
+            </div>
+    
+            <div class="item-exp i-img">
+                <img src="./img/google-logo.svg" alt="">
+            </div>
+            <div class="item-exp i-text">
+                <h3>Amazon</h3>
+                <h4>UI Designer</h4>
+                <h5>2015-2017</h5>
+            </div>
+            <div class="item-exp i-text">
+                <h3>Airbnb</h3>
+                <h4>Senior UX/UI</h4>
+                <h5>2017-2018</h5>
+            </div>
+            <div class="item-exp i-text">
+                <h3>Google</h3>
+                <h4>Product designer</h4>
+                <h5>2018-actualidad</h5>
+            </div>
+            <div class="item-exp i-text">
+                <h3>2 años</h3>
+            </div>
+            <div class="item-exp i-text">
+                <h3>1 años</h3>
+            </div>
+            <div class="item-exp i-text">
+                <h3>2 años</h3>
+            </div>
+            <div class="i10">
+                <img src="./img/list-bar.svg" alt="">
             </div>
         </div>
     </section>
 
-
-
-    <section class="experiencia">
-        <h2>Experiencia</h2>
-            <div class="exp-content">
-                <div class="item1">
-                    <img src="./img/amazon-logo.svg" alt="">
-                <div class="item2">
-                    <h3>Amazon</h3>
-                    <h4>UI Designer</h4>
-                    <h5>2015-2017</h5></div>
-                </div>
-                <div class="item3">
-                    <h3>2 años</h3>
-                </div>
-
-
-                <div class="item4">
-                    <img src="./img/list-bar.svg" alt="">
-                </div>
-
-
-                <div class="item5">
-                    <img src="./img/airbnb-logo.svg" alt="">
-                </div>
-                <div class="item6">
-                    <h3>Airbnb</h3>
-                    <h4>Senior UX/UI</h4>
-                    <h5>2017-2018</h5>
-                </div>
-                <div class="item7">
-                    <h3>1 años</h3>
-                </div>
-                <div class="item8">
-                    <img src="./img/google-logo.svg" alt="">
-                </div>
-                <div class="item9">
-                    <h3>Google</h3>
-                    <h4>Product designer</h4>
-                    <h5>2018-actualidad</h5>
-                </div>
-                <div class="item10">
-                    <h3>2 años</h3>
-                </div>
-
-
-            <!--         <div class="exp-item-img col-4">
-                    <img src="./img/amazon-logo.svg" alt="">
-                    </div>
-                    <div class="exp-item-text col-4">
-                        <div class="text">
-                            <h3>Amazon</h3>
-                            <h4>UI Designer</h4>
-                            <h5>2015-2017</h5>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <h3>2 años</h3>
-                    </div>
-            </div>
-            
-            <div class="exp-content row">
-                    <div class="exp-item-img col-4">
-                    <img src="./img/airbnb-logo.svg" alt="">
-                    </div>
-                    <div class="exp-item-text col-4">
-                        <div class="text">
-                            <h3>Airbnb</h3>
-                            <h4>Senior UX/UI</h4>
-                            <h5>2017-2018</h5>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <h3>1 años</h3>
-                    </div> 
-            </div>
-
-            <div class="exp-content row">
-                <div class="exp-item-img col-4">
-                    <img src="./img/google-logo.svg" alt="">
-                </div>
-                <div class="exp-item-text col-4">
-                    <div class="text">
-                        <h3>Google</h3>
-                        <h4>Product designer</h4>
-                        <h5>2018-actualidad</h5>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <h3>2 años</h3>
-                </div>
-            </div>-->
+    <section class="mis-hab" id="habilidades">
+        <div class="i-tittle">
+            <h2>Mis habilidades</h2>
+        </div>
+        <div class="item-hab i-num">95%</div>
+        <div class="item-hab hab-text">Mobile app desing</div>
+        <div class="item-hab i-num">95%</div>
+        <div class="item-hab hab-text">Web design</div>
+        <div class="item-hab i-num">70%</div>
+        <div class="item-hab hab-text">Motion desing</div>
+        <div class="item-hab i-num">90%</div>
+        <div class="item-hab hab-text">Creacion y mantenimiento de sistemas de diseño</div>
+        <div class="item-hab i-num">90%</div>
+        <div class="item-hab hab-text">Gestion de protectos</div>
     </section>
 
-
-
-    <section class="mis-hab">
-        <h2>Mis habilidades</h2>
-            <div class="row hab-item">
-                <div class="num col-3">
-                    <h6>95%</h6>
-                </div>
-                <div class="hab-text col-7">
-                    <h3>Mobile app desing</h3>
-                </div>
-            </div>
-
-            <div class="row hab-item">
-                <div class="num col-3">
-                    <h6>70%</h6>  
-                </div>
-                <div class="hab-text col-7">
-                    <h3>Motion desing</h3>
-                </div>
-            </div>
-
-            <div class="row hab-item">
-                <div class="num col-3">
-                    <h6>90%</h6>
-                </div>
-                <div class="hab-text col-7">
-                    <h3>Creacion y mantenimiento de sistemas de diseño</h3>
-                </div>
-            </div>
-
-            <div class="row hab-item">
-                <div class="num col-3">
-                    <h6>90%</h6>
-                </div>
-                <div class="hab-text col-7">
-                    <h3>Gestion de protectos</h3>
-                </div>
-            </div>
-    </section>
-
-
-    <section class="portafolio">
+    
+    <section class="portafolio" id="portafolio">
         <h2>Mi portafolio</h2>
         <div class="port-content">
-            <img src="./img/port1.jpg" alt="">
-            <h3>Ecommerce skincare</h3>
-        </div>
-
-        <div class="port-dif">
-            <div class="port-content">
-                <div>
-                    <img src="./img/port2.jpg" alt="">
-                </div>
-                <div>
-                    <h3>Training at home app</h3>
-                </div>
+            <div class="port-img">
+                <img src="./img/port1.jpg" alt="">
+                <h3>Ecommerce skincare</h3>
             </div>
-        </div>
-    
-        <div class="port-content">
-            <img src="./img/port3.jpg" alt="">
-            <h3>Personal write</h3>
-        </div>
+            <div class="port-img-dif">
+                <img src="./img/port2.jpg" alt="">
+                <h3>Training at home app</h3>
+            </div>
+            <div class="port-img">
+                <img src="./img/port3.jpg" alt="">
+                <h3>Personal write</h3>
+            </div>
     </section>
 
 
-    <section class="contacto">
+    <section class="contacto" id="contacto">
         <h2>Contacto</h2>
         <div class="cont-content row">
             <div class="col-6">
@@ -272,6 +195,8 @@
             </div>
         </div>
     </section>
+
+
     <footer>
         <h4>Hecho con ♥ Ignacio Escudero</h4>
     </footer>
