@@ -1,76 +1,152 @@
 @media (min-width: 576px) {
+    .content-home{
+        position: absolute;
+        margin: 3rem 3rem;
+    }
+    .home{
+        height: 500px;
+    }
+    .my-photo{
+        width: 20rem;
+    }
+    .e-1{
+        font-size: 40px;
+    }
+    .e-2{
+        max-width: 30rem;
+        font-size: 35px;
+    }
+    .e-3{
+        font-size: 25px;
+        max-width: 10rem;
+    }
+    .home-icons img{
+        width: 50px;
+    }
 }
-@media (min-width: 790px) {
-    .button-nav{
+@media (min-width: 782px) {
+    .nav-bar{
         display: none;
     }
-    .mobile-nav{
-        display: none;
-     }
-    }
+
     .nav-desk{
-        display: inline-block;
-        margin: auto 0;
+        display: block;
     }
-    .nav-desk ul{
+    .nav-desk-list ul{
+        height: 60px;
         display: flex;
         justify-content: end;
         list-style: none;
+        align-items: center;
     }
     .nav-desk-list a{
-        text-decoration: none;
+        font-size: 15px;
         color: #fff;
-        padding-right: 2rem;
+        padding-right: 10px;
+        text-decoration: none;
     }
     .nav-desk-list a:hover{
         color: #f1a600;
     }
 
 
-
-
-    .home{
-        height: 400px;
-    }.my-photo{
-        width: 15rem;
-    }
     
-@media (max-width: 992px) {
-    /* h1{
-        font-size: 120px
+    .content-home{
+        margin-top: 0;
     }
-    h2{
-        font-size: 30px;
-    }
-    nav a{
-        padding-right: 25px;
-    }
-
     .home{
-        height: 550px;
+        height: 600px;
+    }
+    .my-photo{
+        width: 25rem;
+    }
+    .e-1{
+        font-size: 50px;
+    }
+    .e-2{
+        max-width: 35rem;
+        font-size: 40px;
     }
     .e-3{
-        font-size: 20px;
-        width: 200px;
+        font-size: 35px;
+        max-width: 20rem;
     }
-    .content-home{
-        margin-left: 90px;
+    .home-icons{
+        height: 100%;
     }
     .home-icons img{
         width: 70px;
     }
+}
+    
+@media (min-width: 992px) {
+    .nav-desk-list a{
+        font-size: 20px;
+    }
+    .content-home{
+        margin-top: 0;
+    }
+    .home{
+        height: 750px;
+    }
     .my-photo{
-        width: 400px;
-        right: 50px;
+        width: 30rem;
     }
-
-
-    .port-content img{
-        width: 400px;
-        padding-bottom: 10px;
-        box-shadow: -5px -15px 0px #f1a600, 5px -15px 0px #f1a600;
+    .my-photo-container{
+        margin: 0 7rem;
+        position: absolute;
     }
-    .port-dif img{
-        box-shadow: -5px -15px 0px #51535f, 5px -15px 0px #51535f;
-    } */
+    .element{
+        padding-bottom: 35px;
+    }
+    .e-1{
+        font-size: 70px;
+    }
+    .e-2{
+        max-width: 40rem;
+        font-size: 45px;
+    }
+    .e-3{
+        font-size: 35px;
+        max-width: 20rem;
+    }
+    .home-icons{
+        height: 100%;
+    }
+    .home-icons img{
+        width: 70px;
+    }
+}
+@media (min-width: 1200px) {
+    .home{
+        height: 900px;
+    }
+    .content-home{
+        position: absolute;
+        margin: 0 6rem;
+    }
+    .my-photo{
+        width: 35rem;
+    }
+    .element{
+        padding-bottom: 50px;
+    }
+    .e-1{
+        font-size: 85px;
+    }
+    .e-2{
+        max-width: 45rem;
+        font-size: 50px;
+    }
+    .e-3{
+        font-size: 50px;
+        max-width: 20rem;
+    }
+    .home-icons{
+        height: 100%;
+    }
+    .home-icons img{
+        width: 80px;
+        margin: 0 10px;
+    }
 }
