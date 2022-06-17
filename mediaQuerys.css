@@ -1,4 +1,8 @@
 @media (min-width: 576px) {
+    h2{
+        font-size: 30px;
+    }
+
     .content-home{
         position: absolute;
         margin: 3rem 3rem;
@@ -77,6 +81,16 @@
     .home-icons img{
         width: 70px;
     }
+    .portafolio{
+        max-width: 900px;
+    }
+    .port-content img{
+        width: 300px;
+    }
+    
+    .cont-content img{
+        width: 100px;
+    }
 }
     
 @media (min-width: 992px) {
@@ -115,6 +129,12 @@
     }
     .home-icons img{
         width: 70px;
+    }
+    .portafolio{
+        max-width: 1000px;
+    }
+    .port-content img{
+        width: 400px;
     }
 }
 @media (min-width: 1200px) {
