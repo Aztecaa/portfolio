@@ -1,0 +1,50 @@
+#aboutMe {
+  height: 100vh;
+  text-align: center;
+  padding: 90px 0;
+  margin: 0 5vw;
+}
+.containAboutMe {
+  text-align: center;
+}
+
+.sectAboutMe .aboutMe-btns{
+  display: flex;
+  justify-content: center;
+}
+
+.ilustration1 {
+  width: 95%;
+  
+  max-width: 500px;
+}
+
+@media screen and (min-width: 1200px){
+  .ilustration1{
+    width: 50%;
+  }
+}
+
+.textAboutMe {
+  text-align: justify;
+}
+
+.btn-aboutMe {
+  font-size: 1.1rem;
+  background-color: #ff7d00;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  margin: 15px;
+}
+.btn-aboutMe:hover {
+  box-shadow: 0 0 10px #ff7d00;
+  color: #fff;
+}
+
+.btn-aboutMe a {
+  color: #1e1e1e;
+  text-decoration: none;
+}
+
+/* add */
