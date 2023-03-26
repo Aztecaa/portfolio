@@ -1,4 +1,3 @@
-import certificate_icon from './certificate_icon.svg'
 import html5_logo from './html5_logo.svg'
 import css3_logo from './css3_logo.svg'
 import javascript_logo from './javascript_logo.svg'
@@ -19,5 +18,4 @@ export default {
     "img7": nodejs_logo,
     "img8": sequelizejs_logo,
     "img9": postgresql_logo,
-    "img10": certificate_icon
 }

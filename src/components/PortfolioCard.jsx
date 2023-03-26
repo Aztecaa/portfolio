@@ -1,10 +1,11 @@
 import React from 'react'
 
-const PortfolioCard = ({ title, img, url , description}) => {
+const PortfolioCard = ({ title, img, url, description }) => {
   return (
     <div className="card">
+      <div className="card-img"></div>
       <a href={url} target="_BLANK">
-        <img src={img} alt="" />
+        <img src={img} alt="web-capture" />
       </a>
       <div className="card-body">
         <h4>{title}</h4>

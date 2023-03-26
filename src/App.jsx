@@ -2,7 +2,8 @@
 import './App.css'
 import AboutMe from './components/AboutMe'
 import Contact from './components/Contact'
-import Hero from './components/Hero'
+import Footer from './components/Footer'
+import Home from './components/Home'
 import MyStack from './components/MyStack'
 import Navbar from './components/Navbar'
 import Portfolio from './components/Portfolio'
@@ -11,11 +12,12 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Hero />
+      <Home />
       <AboutMe />
       <MyStack />
       <Portfolio />
       <Contact />
+      <Footer />
     </div>
   )
 }

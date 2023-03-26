@@ -1,0 +1,43 @@
+#home {
+  height: 100vh;
+}
+
+.home_content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.myPhoto img {
+  width: 70vmin;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.home_welcome {
+  text-align: center;
+  margin: 1em 0 0.3em 0;
+}
+.home_hr {
+  height: 1px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.home_text {
+  letter-spacing: 0.3em;
+}
+
+.video-bg {
+  height: 100%;
+  position: fixed;
+  object-fit: cover;
+  z-index: -10;
+}
+
+@media only screen and (min-width: 480px) {
+  .myPhoto {
+    width: 50vmin;
+  }
+}

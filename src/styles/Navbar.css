@@ -1,76 +1,81 @@
-.nav {
+.navbar {
   width: 100%;
-  padding: 0 10px;
+  padding: 1em;
+  background-color: var(--content-background-color);
   display: flex;
   justify-content: space-between;
-  height: 7vh;
-  background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
+  top: 0;
   z-index: 10;
 }
 
-.navMenu {
+.nav_menu {
+  width: 40%;
+  background-color: var(--primary-color);
   position: absolute;
   left: -100%;
   transition: left 0.5s ease-in-out;
-  width: 40%;
-  /* z-index: -10; */
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
 }
-.navMenu a {
+
+.nav_menu .link {
+  padding: 1em;
   display: flex;
-  font-weight: 700;
-  transition: 0.3s all ease-in-out;
-  padding: 10px;
 }
 
-.menuIcons {
-  margin-right: 5px;
+.nav_menu-icon {
+  text-align: center;
+  width: 1em;
+  margin-right: 0.5em;
 }
 
-.btnToggle {
-  margin-left: 10px;
-  font-size: 25px;
-  /* position: relative; */
-  border: none;
+.nav_web-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav_web-icon {
+  margin-left: 1em;
+}
+.img_web-icon {
+  width: 1.5em;
+}
+
+.btn-toggle,
+.btn-toggle:hover {
+  font-size: 1.5em;
   z-index: 10;
   background-color: transparent;
+  box-shadow: none;
 }
 
-.iconImg {
-  width: 25px;
-}
-.iconLink {
-  display: flex;
-  margin-left: 15px;
-  justify-content: center;
-}
-
-@media screen and (min-width: 1200px) {
-  .nav {
-    padding-right: 30px;
+@media screen and (min-width: 960px) {
+  .navbar {
+    padding: 0;
+    padding-right: 1em;
   }
-  .btnToggle {
-    display: none;
-  }
-  .navMenu {
+  .nav_menu {
     display: flex;
+    align-items: center;
     width: fit-content;
     background: none;
-    align-items: center;
     position: unset;
     gap: 5px;
-    cursor: pointer;
   }
-  .navMenu a:hover {
-    background-color: #ff7d00;
-    color: #000;
-    box-shadow: 0 0 5px #ff7d00, 0 0 10px #ffae00;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  .nav_menu a,
+  .nav_menu a i {
+    transition: all 0.3s ease-in-out;
   }
-  .navMenu a:hover i {
-    color: #000;
+
+  .nav_menu a:hover {
+    background-color: var(--color1);
+    color: var(--primary-color);
+    box-shadow: 0 0 5px var(--color2), 0 0 10px var(--color2);
+  }
+  .nav_menu a:hover i {
+    color: var(--primary-color);
+  }
+
+  .btn-toggle {
+    display: none;
   }
 }

@@ -27,16 +27,19 @@ const Navbar = () => {
     }
   }
   return (
-    <>
-      <nav ref={refNav} className="nav">
-        <button onClick={handleToggle} ref={refBtnToggle} className="btnToggle">
+      <nav ref={refNav} className="navbar">
+        <button
+          onClick={handleToggle}
+          ref={refBtnToggle}
+          className="btn-toggle"
+        >
           <i ref={refIcon} className="fa fa-bars" aria-hidden="true"></i>
         </button>
 
-        <section ref={refMenu} className="navMenu">
+        <div ref={refMenu} className="nav_menu">
           <Link onClick={handleToggle} className="link" to="home" smooth={true}>
-            <span className="menuIcons">
-              <i className="fa fa-home"></i>
+            <span className="menu_span-icon">
+              <i className="fa fa-home nav_menu-icon"></i>
             </span>
             Inicio
           </Link>
@@ -46,56 +49,70 @@ const Navbar = () => {
             to="aboutMe"
             smooth={true}
           >
-            <span className="menuIcons">
+            <span className="nav_menu-icon">
               <i className="fa fa-male" aria-hidden="true"></i>
             </span>
             Sobre mi
           </Link>
-          <Link onClick={handleToggle} className="link" to="myStack" smooth={true}>
-            <span className="menuIcons">
+          <Link
+            onClick={handleToggle}
+            className="link"
+            to="myStack"
+            smooth={true}
+          >
+            <span className="nav_menu-icon">
               <i className="fa fa-cubes" aria-hidden="true"></i>
             </span>
             Mi Stack
           </Link>
-          <Link onClick={handleToggle} className="link" to="portfolio" smooth={true}>
-            <span className="menuIcons">
+          <Link
+            onClick={handleToggle}
+            className="link"
+            to="portfolio"
+            smooth={true}
+          >
+            <span className="nav_menu-icon">
               <i className="fa fa-briefcase" aria-hidden="true"></i>
             </span>
             Portafolio
           </Link>
-          <Link onClick={handleToggle} className="link" to="contact" smooth={true}>
-            <span className="menuIcons">
+          <Link
+            onClick={handleToggle}
+            className="link"
+            to="contact"
+            smooth={true}
+          >
+            <span className="nav_menu-icon">
               <i className="fa fa-phone" aria-hidden="true"></i>
             </span>
             Contacto
           </Link>
-        </section>
+        </div>
 
-        <section className="navIcons d-flex">
+        <div className="nav_web-icons d-flex">
           <a
-            className="iconLink"
+            className="nav_web-icon"
             href="Ignacio-Escudero-CV.pdf"
             download={'Ignacio Escudero CV'}
           >
-            <img className="iconImg" src={cv} alt="" />
+            <img className="img_web-icon" src={cv} alt="" />
           </a>
           <a
-            className="iconLink"
+            className="nav_web-icon"
             href="https://www.linkedin.com/in/ignacio-escudero-a8a651222/"
             target="_BLANK"
           >
-            <img className="iconImg" src={linkedin} alt="" />
+            <img className="img_web-icon" src={linkedin} alt="" />
           </a>
           <a
-            className="iconLink"
+            className="nav_web-icon"
             href="https://github.com/Aztecaa"
             target="_BLANK"
           >
-            <img className="iconImg" src={github} alt="" />
+            <img className="img_web-icon" src={github} alt="" />
           </a>
-        </section>
+        </div>
       </nav>
-    </>
   )
 }
 

@@ -3,34 +3,40 @@ import '../styles/Contact.css'
 
 const Contact = () => {
   return (
-    <div id="contact">
-      <h2 className="flicker">Contact</h2>
+    <section id="contact">
+      <h3 className="flicker">Contact</h3>
       <div className="contact-container">
         <div className="contact-form">
-          <form name="contact" method="post" data-netlify="true">
+          <form name="contact" method="POST" data-netlify="true">
             <div>
-              <label htmlFor="name">Nombre</label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                required
-                placeholder="enter your name"
-              />
+              <label htmlFor="name">
+                Nombre
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  placeholder="enter your name"
+                />
+              </label>
             </div>
             <div>
-              <label htmlFor="email">Email</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                required
-                placeholder="enter your email"
-              />
+              <label htmlFor="email">
+                Email
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  placeholder="enter your email"
+                />
+              </label>
             </div>
             <div className="block">
-              <label htmlFor="message">Mensaje</label>
-              <textarea name="message" id="" cols="30" rows="10"></textarea>
+              <label htmlFor="message">
+                Mensaje
+                <textarea name="message" id="" cols="30" rows="10" placeholder='enter you message'></textarea>
+              </label>
             </div>
             <div className="block">
               <button type="submit">
@@ -43,7 +49,7 @@ const Contact = () => {
           <h3>More info</h3>
           <ul>
             <li>
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <i className="fa fa-map-marker" aria-hidden="true"></i>
               Cordoba, Argentina
             </li>
             <li>
@@ -51,16 +57,13 @@ const Contact = () => {
               +54 3544 300465
             </li>
             <li>
-              <i class="fa fa-envelope-open" aria-hidden="true"></i>
+              <i className="fa fa-envelope-open" aria-hidden="true"></i>
               ignacioescazt01@gmail.com
             </li>
           </ul>
         </div>
       </div>
-      <footer>
-        <h3>Hecho por Ignacio Gabriel Escudero 🍕</h3>
-      </footer>
-    </div>
+    </section>
   )
 }
 

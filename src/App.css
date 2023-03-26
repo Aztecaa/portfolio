@@ -1,32 +1,80 @@
-/* viewport */
+:root {
+  --primary-color: #181818;
+  --primary-color2: #252525;
+
+  --secondary-color: #f0f0f0;
+  --secondary-color2: #dddddd;
+
+  --content-background-color: #000000b3;
+
+  --color1: #f9a826;
+  --color2: #f5b44c;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #e0e0e0;
 }
 
-html,
-body {
-  font-family: 'Nunito', sans-serif;
-  min-width: 350px;
-  background-color: #1e1e1e;
+.App {
+  min-width: 360px;
 }
 
 /* tags */
-h2, h4 {
-  color: #f48217;
+h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--color1);
+}
+
+h4 {
+  text-align: center;
+  margin: 1em;
+  color: var(--color1);
+}
+
+h5 {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+img,
+picture,
+video,
+figure,
+svg {
+  width: 100%;
+  max-height: 100%;
 }
 
 a {
+  color: inherit;
+  cursor: pointer;
   text-decoration: none;
 }
 
+button {
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color1);
+  cursor: pointer;
+  border: none;
+}
+button:hover {
+  box-shadow: 0 0 10px var(--color1);
+  background-color: var(--color2);
+}
+
+i {
+  color: var(--secondary-color);
+}
+
 hr {
+  border: none;
   width: 10rem;
 }
 
-li{
+li {
   list-style: none;
 }
 
@@ -34,24 +82,38 @@ li{
 .d-flex {
   display: flex;
 }
-.center-flex {
+.d-flex-center {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 /* others */
-.description {
-  margin: 30px 0;
-  text-align: left;
+.levitate {
+  animation: lev 1s infinite alternate;
+}
+@keyframes lev {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-2%);
+  }
 }
 
 .flicker {
-  font-size: 2.5rem;
-  animation: flick 0.8s infinite alternate;
+  animation: flick 0.6s infinite alternate;
 }
-
 @keyframes flick {
   to {
-    text-shadow: 0 0 10px #f48217;
+    text-shadow: 0 0 5px var(--color2);
   }
+}
+
+::selection {
+  background-color: transparent;
+}
+
+#detach-button-host {
+  display: none;
 }
