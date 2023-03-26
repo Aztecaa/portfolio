@@ -41,7 +41,7 @@
   .aboutMe-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 1em;
+    margin: 1.5em;
   }
   .aboutMe-content {
     border-top-left-radius: 5px;

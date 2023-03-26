@@ -10,7 +10,7 @@
   align-items: center;
 }
 
-.myPhoto img {
+.my-photo{
   width: 70vmin;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.5);
@@ -20,12 +20,16 @@
   text-align: center;
   margin: 1em 0 0.3em 0;
 }
+.home_welcome h1{
+  margin: .5em;
+}
 .home_hr {
   height: 1px;
   margin: auto;
   background-color: rgba(0, 0, 0, 0.8);
 }
 .home_text {
+  margin: .5em;
   letter-spacing: 0.3em;
 }
 
@@ -37,7 +41,7 @@
 }
 
 @media only screen and (min-width: 480px) {
-  .myPhoto {
+  .my-photo {
     width: 50vmin;
   }
 }
