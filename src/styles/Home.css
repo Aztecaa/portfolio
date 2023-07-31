@@ -21,7 +21,7 @@
   margin: 1em 0 0.3em 0;
 }
 .home_welcome h1{
-  margin: .5em;
+  margin: .2em;
 }
 .home_hr {
   height: 1px;
@@ -29,7 +29,7 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 .home_text {
-  margin: .5em;
+  margin: .2em;
   letter-spacing: 0.3em;
 }
 

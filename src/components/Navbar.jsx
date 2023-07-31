@@ -39,7 +39,7 @@ const Navbar = () => {
         <div ref={refMenu} className="nav_menu">
           <Link onClick={handleToggle} className="link" to="home" smooth={true}>
             <span className="menu_span-icon">
-              <i className="fa fa-home nav_menu-icon"></i>
+              <i className="fa fa-home"></i>
             </span>
             Inicio
           </Link>
@@ -49,7 +49,7 @@ const Navbar = () => {
             to="aboutMe"
             smooth={true}
           >
-            <span className="nav_menu-icon">
+            <span className="menu_span-icon">
               <i className="fa fa-male" aria-hidden="true"></i>
             </span>
             Sobre mi
@@ -60,7 +60,7 @@ const Navbar = () => {
             to="myStack"
             smooth={true}
           >
-            <span className="nav_menu-icon">
+            <span className="menu_span-icon">
               <i className="fa fa-cubes" aria-hidden="true"></i>
             </span>
             Mi Stack
@@ -71,7 +71,7 @@ const Navbar = () => {
             to="portfolio"
             smooth={true}
           >
-            <span className="nav_menu-icon">
+            <span className="menu_span-icon">
               <i className="fa fa-briefcase" aria-hidden="true"></i>
             </span>
             Portafolio
@@ -82,14 +82,14 @@ const Navbar = () => {
             to="contact"
             smooth={true}
           >
-            <span className="nav_menu-icon">
+            <span className="menu_span-icon">
               <i className="fa fa-phone" aria-hidden="true"></i>
             </span>
             Contacto
           </Link>
         </div>
 
-        <div className="nav_web-icons d-flex">
+        <div className="nav_web-icons">
           <a
             className="nav_web-icon"
             href="Ignacio-Escudero-CV.pdf"

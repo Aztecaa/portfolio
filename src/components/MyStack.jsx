@@ -10,7 +10,7 @@ const MyStack = () => {
       <div className="myStack_container">
         <p className="myStack_description-principal">
           En esta seccion se encuentra todo lo relacionado con mi curva de
-          aprendizajes y mis certificaciones mostrando tanto las tecnologias
+          aprendizaje y mis certificaciones mostrando tanto las tecnologias
           basicas como tambien diferentes metodos o tecnologias utilizadas en
           diferentes paginas o aplicaciones web
         </p>
