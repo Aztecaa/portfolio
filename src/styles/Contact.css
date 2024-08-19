@@ -1,17 +1,9 @@
 #contact {
   max-width: 1024px;
-  padding-top: 5em;
-  text-align: center;
-  margin: auto;
+  font-size: 50%;
 }
 
-.contact-container {
-  background-color: var(--content-background-color);
-  margin: 1.5em;
-  border-radius: 5px;
-}
-
-.contact-form form div {
+.contact-form form label {
   font-size: 1.2rem;
   padding: 1em;
 }
@@ -29,21 +21,13 @@
 }
 
 .contact-form form button {
-  padding: 1em;
+  padding: .5em;
   border-radius: 5px;
   border: none;
-  width: 200px;
   background-color: var(--color1);
 }
 form button > i {
   color: var(--color-primary);
-}
-
-.contact-info {
-  padding: 1em 0;
-  background-color: var(--primary-color);
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
 }
 
 .contact-info h3,
@@ -70,10 +54,5 @@ form button > i {
   }
   .contact-form form .block {
     grid-column: 1 / 3;
-  }
-  .contact-info{
-  border-bottom-left-radius: 0;
-  border-top-right-radius: 5px;
-  border-top-right-radius: 5px;
   }
 }

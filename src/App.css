@@ -5,38 +5,53 @@
   --secondary-color: #f0f0f0;
   --secondary-color2: #dddddd;
 
-  --content-background-color: #000000b3;
+  --opacity-color: rgba(0, 0, 0, .5);
 
-  --color1: #f9a826;
-  --color2: #f5b44c;
+  --color1: #ea3535;
+  --color2: #e84747;
+  --color3: #740000;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html > div[style] {
+  display: none;
 }
 
 .App {
-  min-width: 360px;
+  max-width: 1280px;
+}
+.bg-primary-color{                                                                                                                                                                                                                                                                                                                    
+  background-color: var(--primary-color);
 }
 
-/* tags */
-h3 {
-  text-align: center;
-  font-size: 2rem;
+.bg-secondary-color{
+  background-color: var(--secondary-color);
+}
+
+.bg-color1{
+  background-color: var(--color1);
+}
+.opacity-color{
+  background-color: var(--opacity-color);
+}
+.secondary-color{
+  color: var(--secondary-color);
+}
+.text-color1{
   color: var(--color1);
 }
 
-h4 {
-  text-align: center;
-  margin: 1em;
-  color: var(--color1);
+.section-color{
+  background-color: var(--opacity-color);
 }
 
-h5 {
-  font-size: 1.6rem;
-  text-align: center;
+.color2{
+  background-color: var(--color2);
+}
+.text-color1{
+  color: var(--color1);
+}
+.text-color2{
+  color: var(--color3);
 }
 
 img,
@@ -52,6 +67,10 @@ a {
   color: inherit;
   cursor: pointer;
   text-decoration: none;
+}
+
+h3{
+  font-size: xx-large;
 }
 
 button {
@@ -78,42 +97,6 @@ li {
   list-style: none;
 }
 
-/* Flex */
-.d-flex {
-  display: flex;
-}
-.d-flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* others */
-.levitate {
-  animation: lev 1s infinite alternate;
-}
-@keyframes lev {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-2%);
-  }
-}
-
-.flicker {
-  animation: flick 0.6s infinite alternate;
-}
-@keyframes flick {
-  to {
-    text-shadow: 0 0 5px var(--color2);
-  }
-}
-
-::selection {
-  background-color: transparent;
-}
-
-#detach-button-host {
-  display: none;
+.preLoader{
+  height: 100vh;
 }

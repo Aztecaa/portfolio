@@ -1,48 +1,41 @@
 //@ts-check
 import React from "react";
 import { Link } from "react-scroll";
-// @ts-ignore
-import ilustration1 from "../assets/aboutMe/ilustration1.svg";
 import "../styles/AboutMe.css";
 
 const AboutMe = () => {
     return (
-        <section id="aboutMe">
-            <div className="aboutMe-container">
-                <div className="aboutMe-content">
-                    <h3 className="flicker ">Sobre mi</h3>
-                    <p className="aboutMe-p">
-                        Soy alguien que esta siempre intentando ir hacia adelante, por tanto todos
-                        los días intento aprender, generar y construir. camino por la programación
-                        podría decirse que empezó en la secundaria con C++ y Pseint, resolviendo
-                        problemas matemáticos y haciendo uno que otro juego. <br />
-                        Hoy soy un desarrollador web con el stack PERN utilizando React Js como
-                        framework pero estoy dispuesto a aprender lo que sea necesario para el
-                        puesto que se me asigne. Si desea seguir conociendo de mi puede contactarme, desde ya un gran saludo :D
-                    </p>
-                    <div className="aboutMe-btns">
-                        <button className="btn-aboutMe">
-                            <Link className="link" to="contact" smooth={true}>
-                                Contactarme
-                            </Link>
-                        </button>
-                        <button className="btn-aboutMe">
-                            <a href="Ignacio-Escudero-CV.pdf" download={"Ignacio Escudero CV"}>
-                                Descargar CV
-                            </a>
-                        </button>
+        <section id="aboutMe" className="pt-24 m-auto">
+            <div className="mx-5 flex flex-col opacity-color rounded-md">
+                <h3 className="text-color1 text-center mt-3 font-bold drop-shadow-md">Sobre mi</h3>
+                <div className="grid gap-5 p-3 md:grid-cols-2">
+                    <div>
+                        <p className="mb-2">
+                            Me llamo Ignacio Gabriel Escudero pero mis amigos me dicen Azteca, tengo 23 años y mi objetivo profesional es dedicarme a la programacion.
+                        </p>
+                        <p className="mb-5">
+                            Despues de mi primera experiencia como programador web con una empresa de mi localidad, quiero seguir avanzando.
+                        </p>
                     </div>
-                    <h4>En mis tiempos libres...</h4>
-                    <ul>
-                        <li>👥 Paso tiempo con mis familia y amigos</li>
-                        <li>🍿 Veo una que otra serie</li>
-                        <li>🎸 Toco guitarra</li>
-                        <li>🌳 Aprendo a programar videojuegos</li>
-                    </ul>
+                    <div>
+                        <p className="mb-2">La primera vez que programe fue en la especialidad secundaria, con PSeint, C++, JS y HTML, despues de terminar la secundaria recibi mi titulo con especialidad en infornatica</p>
+                        <p>
+                            Actualmente cuento con <span className="text-color1">2 años de experiencia</span> en mi primer año programando me dedique a aprender como autodidacta hasta que decidi realizar un curso intensivo que abarcaba principalmente <span className="text-color1">React</span>, al terminar este consegui mi primer trabajo al cabo de unos meses.
+                        </p>
+                    </div>
                 </div>
-                <figure className="aboutMe-ilustration d-flex-center">
-                    <img className="ilustration1" src={ilustration1} alt="" />
-                </figure>
+                <div className="flex justify-center gap-3 pb-3 pl-3">
+                    <button className="bg-color1 text-md rounded-md p-1 border-none">
+                        <Link className="link" to="contact" smooth={true}>
+                            Contactarme
+                        </Link>
+                    </button>
+                    <button className="bg-color1 text-md rounded-md p-1 border-none">
+                        <a href="Ignacio-Escudero-CV.pdf" download={"Ignacio Escudero DevCV"}>
+                            Descargar CV
+                        </a>
+                    </button>
+                </div>
             </div>
         </section>
     );

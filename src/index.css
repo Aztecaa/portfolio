@@ -1,5 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
-  font-size: 64.2%;
+  font-size: 1;
 }
 
 body {
@@ -9,7 +13,7 @@ body {
   hyphens: auto;
 }
 
-@media only screen and (min-width: 320px) {
+/* @media only screen and (min-width: 320px) {
   html {
     font-size: 75%;
   }
@@ -36,17 +40,6 @@ body {
     font-size: 118, 75%;
   }
 }
-@media (min-width: 1280px) {
-  html {
-    font-size: 125%;
-  }
-}
-
-@media (min-width: 1024px) {
-  html {
-    font-size: 110%;
-  }
-}
 
 @media only screen and (min-width: 1280px) {
   html {
@@ -57,5 +50,44 @@ body {
 @media screen and (min-width: 1536px) {
   html {
     font-size: 131.2%;
+  }
+} */
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (min-width: 480px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  html {
+    font-size: 112%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  html {
+    font-size: 118%;
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  html {
+    font-size: 125.2%;
   }
 }

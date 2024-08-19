@@ -1,72 +1,13 @@
 #myStack {
   max-width: 1024px;
-  margin: auto;
-  padding-top: 5em;
-  text-align: center;
-}
-.myStack_container {
-  margin: 1.5em;
-  padding: 2em 1em;
-  background-color: var(--content-background-color);
-  border-radius: 5px;
-}
-.myStack_description-principal {
-  margin: 0 1em;
 }
 
-.myStack_item {
-  margin: 1.5em;
-}
-.myStack_item-title {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-.myStack_item-title h5 {
-  width: fit-content;
-}
 .certificate-icon {
   width: 0.7em;
   fill: var(--color1);
 }
-.myStack_item-content {
-  margin: 1em;
-}
-.myStack_item-description {
-  text-align: justify;
-}
-.myStack-hr {
-  height: 1px;
-  margin: 0.5em auto;
-  background: white;
-}
-.myStack_icons {
-  margin: auto 0;
-}
+
 .myStack_img {
   width: 6rem;
   margin: 0 1em;
-}
-
-.reverse {
-  display: inline;
-}
-
-@media (min-width: 780px) {
-  .myStack_img {
-    width: 5em;
-  }
-  .myStack_item-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
-  }
-  .reverse .myStack_item-description {
-    grid-area: 2 / 3 / 1 / 2;
-  }
-  .reverse .myStack_item-icons {
-    grid-area: 1 / 2 / 1 / 2;
-    text-align: justify;
-    padding: 0 2em;
-  }
 }
