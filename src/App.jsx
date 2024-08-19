@@ -1,7 +1,7 @@
 // import { useState } from 'react'
 import './App.css'
 import PreLoader from './components/PreLoader'
-import Bg from './components/bg'
+import Bg from './components/Bg'
 import AboutMe from './components/AboutMe'
 import Contact from './components/Contact'
 import ScrollUp from './components/ScrollUp'
