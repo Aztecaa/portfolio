@@ -1,0 +1,25 @@
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 125%;
+    /* Ajusta la posición según el diseño */
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.tooltip-image {
+    min-width: 25vw;
+    /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+    margin-right: 10px;
+}

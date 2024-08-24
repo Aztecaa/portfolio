@@ -37,8 +37,8 @@ console.log(cards)
 const Portfolio = () => {
   return (
     <section id="portfolio" className='pt-24 m-auto'>
-      <div className='section-color mx-5 flex flex-col rounded-md'>
-        <h3 className="text-color1 text-center mt-3">Portafolio</h3>
+      <div className='section-color mx-5 p-5 flex flex-col rounded-md'>
+        <h3 className="text-color1 text-center mb-3">Portafolio</h3>
         <div className="portfolio_container">
           <p className="description">
             Esta seccion muestra los diferentes trabajos que he realizado con las

@@ -1,5 +1,7 @@
 // import { useState } from 'react'
 import './App.css'
+import { useState, useEffect } from 'react'
+
 import PreLoader from './components/PreLoader'
 import Bg from './components/Bg'
 import AboutMe from './components/AboutMe'
@@ -9,10 +11,9 @@ import Home from './components/Home'
 import MyStack from './components/MyStack'
 import Navbar from './components/Navbar'
 import Portfolio from './components/Portfolio'
-import { useState, useEffect } from 'react'
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState( )
   useEffect(() => {
     setIsLoading(true)
     setTimeout(() => {

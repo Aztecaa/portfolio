@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+
 import '../styles/Contact.css'
 
 const Contact = () => {
@@ -24,7 +25,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className='pt-24 text-center m-auto'>
+    <section id="contact" className='pt-24 max-[1024px]: text-center m-auto'>
       <div className='mx-5 md:flex'>
         <article className='rounded-t-md md:rounded-l-md md:rounded-r-none p-5 section-color'>
           <div className="contact-form ">

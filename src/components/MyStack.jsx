@@ -1,11 +1,12 @@
 import React from 'react'
+import Tooltip from './ToolTip'
 import '../styles/MyStack.css'
 import imgsMS from '../assets/myStack/imgsMS'
 
 const MyStack = () => {
   return (
     <section id="myStack" className='pt-24 m-auto'>
-      <div className='mx-5 p-5 flex flex-col section-color max-w-screen-lg rounded-md'>
+      <div className='mx-5 p-5 flex flex-col opacity-color max-w-screen-lg rounded-md'>
         <h3 className="text-color1 text-center mb-3">Mi stack</h3>
         <p className="mb-3">
           En esta seccion se encuentra todo lo relacionado con mi curva de
@@ -19,19 +20,26 @@ const MyStack = () => {
             <h5 className='mr-1'>
               Fundamentos de la programación
             </h5>
-            <a className='self-center'
+            <h3 className='self-center'
               href="https://certificates.academlo.com/en/verify/30716456102592"
               target="_BLANK"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="certificate-icon"
-                viewBox="0 0 16 16"
+              <Tooltip
+                imageUrl="./fundamentos.png"
+                tooltipText="Este es mi certificado por aprender HTML, CSS Y JS."
               >
-                <path d="M7.5 5.5a.5.5 0 0 0-1 0v.634l-.549-.317a.5.5 0 1 0-.5.866L6 7l-.549.317a.5.5 0 1 0 .5.866l.549-.317V8.5a.5.5 0 1 0 1 0v-.634l.549.317a.5.5 0 1 0 .5-.866L8 7l.549-.317a.5.5 0 1 0-.5-.866l-.549.317V5.5zm-2 4.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 2a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
-                <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z" />
-              </svg>
-            </a>
+                <a href="https://verified.sertifier.com/en/verify/30716456102592/">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="tooltip-trigger certificate-icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M7.5 5.5a.5.5 0 0 0-1 0v.634l-.549-.317a.5.5 0 1 0-.5.866L6 7l-.549.317a.5.5 0 1 0 .5.866l.549-.317V8.5a.5.5 0 1 0 1 0v-.634l.549.317a.5.5 0 1 0 .5-.866L8 7l.549-.317a.5.5 0 1 0-.5-.866l-.549.317V5.5zm-2 4.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 2a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
+                    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z" />
+                  </svg>
+                </a>
+              </Tooltip>
+            </h3>
           </div>
           <hr className="bg-white h-0.5 mb-3 mx-auto" />
           <div>
@@ -58,20 +66,23 @@ const MyStack = () => {
             <h5 className='mr-1'>
               Desarrollo front-end
             </h5>
-            <a
-              className='self-center'
-              href="https://certificates.academlo.com/en/verify/93055241346077"
-              target="_BLANK"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="certificate-icon "
-                viewBox="0 0 16 16"
+            <h3 className='self-center'>
+              <Tooltip
+                imageUrl="./frontend.png"
+                tooltipText="Este es mi certificado por aprender HTML, CSS Y JS."
               >
-                <path d="M7.5 5.5a.5.5 0 0 0-1 0v.634l-.549-.317a.5.5 0 1 0-.5.866L6 7l-.549.317a.5.5 0 1 0 .5.866l.549-.317V8.5a.5.5 0 1 0 1 0v-.634l.549.317a.5.5 0 1 0 .5-.866L8 7l.549-.317a.5.5 0 1 0-.5-.866l-.549.317V5.5zm-2 4.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 2a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
-                <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z" />
-              </svg>
-            </a>
+                <a href="https://verified.sertifier.com/en/verify/30716456102592/">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="tooltip-trigger certificate-icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M7.5 5.5a.5.5 0 0 0-1 0v.634l-.549-.317a.5.5 0 1 0-.5.866L6 7l-.549.317a.5.5 0 1 0 .5.866l.549-.317V8.5a.5.5 0 1 0 1 0v-.634l.549.317a.5.5 0 1 0 .5-.866L8 7l.549-.317a.5.5 0 1 0-.5-.866l-.549.317V5.5zm-2 4.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 2a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
+                    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z" />
+                  </svg>
+                </a>
+              </Tooltip>
+            </h3>
           </div>
           <hr className="bg-white h-0.5 mx-auto mb-3" />
           <div className="mb-5 md:flex md:flex-col-2">
@@ -97,20 +108,23 @@ const MyStack = () => {
             <h5 className='mr-1'>
               Desarrollo back-end
             </h5>
-            <a
-              className='self-center'
-              href="https://certificates.academlo.com/en/verify/57128504261252"
-              target="_BLANK"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="certificate-icon "
-                viewBox="0 0 16 16"
+            <h3 className='self-center'>
+              <Tooltip
+                imageUrl="./backend.png"
+                tooltipText="Este es mi certificado por aprender HTML, CSS Y JS."
               >
-                <path d="M7.5 5.5a.5.5 0 0 0-1 0v.634l-.549-.317a.5.5 0 1 0-.5.866L6 7l-.549.317a.5.5 0 1 0 .5.866l.549-.317V8.5a.5.5 0 1 0 1 0v-.634l.549.317a.5.5 0 1 0 .5-.866L8 7l.549-.317a.5.5 0 1 0-.5-.866l-.549.317V5.5zm-2 4.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 2a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
-                <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z" />
-              </svg>
-            </a>
+                <a href="https://verified.sertifier.com/en/verify/30716456102592/">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="tooltip-trigger certificate-icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M7.5 5.5a.5.5 0 0 0-1 0v.634l-.549-.317a.5.5 0 1 0-.5.866L6 7l-.549.317a.5.5 0 1 0 .5.866l.549-.317V8.5a.5.5 0 1 0 1 0v-.634l.549.317a.5.5 0 1 0 .5-.866L8 7l.549-.317a.5.5 0 1 0-.5-.866l-.549.317V5.5zm-2 4.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 2a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
+                    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z" />
+                  </svg>
+                </a>
+              </Tooltip>
+            </h3>
           </div>
           <hr className="bg-white h-0.5 mx-auto mb-3" />
           <div className="mb-5 md:flex md:flex-col-2">
@@ -141,13 +155,6 @@ const MyStack = () => {
             />
           </div>
         </article>
-
-        <div className="max-w-screen-lg">
-          <h5 className='text-center'>Otras tecnologias</h5>
-          <div>
-            
-          </div>
-        </div>
       </div>
     </section>
   )
