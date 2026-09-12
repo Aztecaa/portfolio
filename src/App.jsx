@@ -1,6 +1,6 @@
 import './App.css'
 import AboutMe from './components/AboutMe'
-import Bg from './components/bg'
+import Bg from './components/Bg'
 import Contact from './components/Contact'
 import ScrollUp from './components/ScrollUp'
 import Home from './components/Home'
