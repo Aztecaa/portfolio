@@ -1,0 +1,6 @@
+.video-bg {
+    height: 100%;
+    position: fixed;
+    object-fit: cover;
+    z-index: -10;
+}
